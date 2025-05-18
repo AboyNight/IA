@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ULTRONEX AI</title>
+    <style>
+        body { font-family: Arial; background-color: #121212; color: white; text-align: center; padding: 30px; }
+        textarea, input[type=submit] { width: 80%; padding: 10px; margin: 10px; border-radius: 8px; border: none; }
+        textarea { height: 150px; }
+    </style>
+</head>
+<body>
+    <h1>🤖 ULTRONEX AI – by AboyNight</h1>
+    <form method="post">
+        <textarea name="prompt" placeholder="Pose ta question ici..."></textarea><br>
+        <input type="submit" value="Envoyer">
+    </form>
+    {% if response %}
+        <h2>Réponse :</h2>
+        <div style="white-space: pre-wrap;">{{ response }}</div>
+    {% endif %}
+</body>
+</html>
